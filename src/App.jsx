@@ -37,27 +37,29 @@ const App = () => {
     <div className=" bg-gray-900 text-gray-300 overflow-x-hidden">
       <div className='max-w-[100vw] mx-auto  flex flex-col   font-display text-center  min-h-screen'>
         <div className='mt-10 mb-14   flex flex-col w-full items-center text-center'>
-            
-          <h1 className="text-3xl text-fuchsia-600 font-bold ">AL-Zhaimer Game</h1>
+            <a href="https://al-zheimer.vercel.app/">
+
+          <h1 className="text-3xl hover:text-fuchsia-400 text-fuchsia-600 font-bold ">AL-Zhaimer Game</h1>
+            </a>
       
         </div>
         {step === 1 && (
-        <div className="flex flex-col w-full px-8 items-start mb-4 mt-0">
+        <div className="flex flex-col w-full px-8 items-center mb-4 mt-0">
             <h2 className="text-2xl font-bold mb-4">Enter Number of Players</h2>
-        <div className='flex w-full h-12 justify-between '>
-              
-            <input
-              type="text" // تغيير نوع الإدخال إلى نص
-              className="p-2 border border-gray-300 rounded mb-4 w-[60%] h-full bg-gray-800" // لون النص أسود
-              placeholder="Number of players"
-              value={numPlayers}
-              onChange={handleNumPlayersChange}
-              />
-            <button onClick={handleStartGame} className=" bg-teal-950 h-full w-auto rounded px-3 hover:bg-teal-800">
-              Start Game
-            </button>
-              </div>
-          </div>
+            <div className='flex w-full h-12 justify-center gap-5 '>
+                  
+                <input
+                  type="text" // تغيير نوع الإدخال إلى نص
+                  className="p-2 border border-gray-300 rounded mb-4 w-[40%] h-full bg-gray-800" // لون النص أسود
+                  placeholder="Number of players"
+                  value={numPlayers}
+                  onChange={handleNumPlayersChange}
+                  />
+                <button onClick={handleStartGame} className=" bg-teal-950 h-full w-auto rounded px-3 hover:bg-teal-800">
+                  Start Game
+                </button>
+            </div>
+        </div>
         )}
         {(step === 2 && (parseInt(numPlayers, 10) || 0)!==0) &&   (
           <PlayerInput 
