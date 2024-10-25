@@ -34,8 +34,8 @@ const App = () => {
   };
 
   return (
-    <div className=" bg-gray-900 text-gray-300 overflow-x-hidden">
-      <div className='max-w-[100vw] mx-auto  flex flex-col   font-display text-center  min-h-screen'>
+    <div className=" bg-gray-900 text-gray-300  overflow-x-hidden">
+      <div className='max-w-[100vw] mx-auto  flex flex-col   font-display text-center  h-screen'>
         <div className='mt-10 mb-14   flex flex-col w-full items-center text-center'>
             <a href="https://al-zheimer.vercel.app/">
 
@@ -50,7 +50,7 @@ const App = () => {
                   
                 <input
                   type="text" // تغيير نوع الإدخال إلى نص
-                  className="p-2 border border-gray-300 rounded mb-4 w-[40%] h-full bg-gray-800" // لون النص أسود
+                  className="p-2 border border-gray-300 rounded mb-4 w-[55%] h-full bg-gray-800" // لون النص أسود
                   placeholder="Number of players"
                   value={numPlayers}
                   onChange={handleNumPlayersChange}

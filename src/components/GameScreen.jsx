@@ -70,7 +70,7 @@ const GameScreen = ({ playerNames }) => {
 
   return (
     <div className="mt-4 px-8 w-screen">
-      <h2 className="text-xl font-semibold mb-2">Game Scoreboard</h2>
+      <h2 className="text-xl font-semibold mb-10">Game Scoreboard</h2>
       <div className=" overflow-y-scroll w-full max-h-[65vw]">
         <div className="flex justify-between text-lg font-bold">
           {players.map((player, index) => (
@@ -88,12 +88,12 @@ const GameScreen = ({ playerNames }) => {
         ))}
       
       </div>
-          <div className="flex justify-around   pt-5 gap-5 px-2 ">
+          <div className="flex justify-around  overflow-x-scroll pt-5 gap-5 px-2 ">
           {players.map((_, index) => (
             <input
               key={index}
               type="number"
-              className={` p-1 w-20  bg-gray-700 border  border-gray-300 rounded  text-center`}
+              className={` p-1 w-14  bg-gray-700 border  border-gray-300 rounded  text-center`}
               placeholder="points"
               value={newPoints[index]}
               onChange={(e) => handlePointChange(index, e.target.value)}
