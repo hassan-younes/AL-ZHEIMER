@@ -39,7 +39,7 @@ const App = () => {
         <div className='mt-10 mb-14   flex flex-col w-full items-center text-center'>
             <a href="https://al-zheimer.vercel.app/">
 
-          <h1 className="text-3xl hover:text-fuchsia-400 text-fuchsia-600 font-bold ">AL-Zhaimer Game</h1>
+          <h1 className="text-3xl hover:text-fuchsia-400 text-fuchsia-600 font-bold ">AL-Zheimer Game</h1>
             </a>
       
         </div>
