@@ -20,7 +20,7 @@ const [stat,setStat]= useState(false);
       "",
     );
     newPoints.forEach((point)=>{
-if (point>=1) {setStat(true)}
+if (point>=1 && typeof(point) ==="number") {setStat(true)}
 })
     if (allPointsValue===0 || stat === false) {return null};
     const updatedPlayers = players.map((player, index) => {
