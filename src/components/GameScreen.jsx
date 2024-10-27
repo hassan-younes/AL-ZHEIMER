@@ -71,12 +71,15 @@ const GameScreen = ({ playerNames }) => {
   return (
     <div className="mt-4 px-8 w-screen">
       <h2 className="text-xl font-semibold mb-10">Game Scoreboard</h2>
-      <div className=" overflow-y-scroll w-full max-h-[65vw]">
-        <div className="flex  justify-between text-lg font-bold">
+      <div className="w-full max-h-[65vw]">
+      <div className="flex  justify-between text-lg font-bold">
           {players.map((player, index) => (
             <div key={index} className="flex-1 text-center ">{player.name}</div>
           ))}
         </div>
+      </div>
+      <div className=" overflow-y-scroll w-full max-h-[65vw]">
+        
         {players[0].points.map((_, roundIndex) => (
           <div key={roundIndex} className="flex  justify-between">
             {players.map((player, playerIndex) => (
