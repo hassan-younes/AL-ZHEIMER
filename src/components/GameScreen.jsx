@@ -19,7 +19,7 @@ const [stat,setStat]= useState(false);
       (accumulator, currentValue) => accumulator + currentValue,
       "",
     );
-    allPointsValue.forEach((point)=>{
+    newPoints.forEach((point)=>{
 if (point>=1) {setStat(true)}
 })
     if (allPointsValue===0 || stat === false) {return null};
