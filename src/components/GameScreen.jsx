@@ -7,7 +7,7 @@ const GameScreen = ({ playerNames }) => {
   );
   
   var allPointsValue=0 // for checking no change with prev values
-  const [newPoints, setNewPoints] = useState(Array(playerNames.length).fill(0));
+  const [newPoints, setNewPoints] = useState(Array(playerNames.length).fill(""));
 
   const validatePoints = (value) => {
     const number = Number(value);
