@@ -89,12 +89,12 @@ const GameScreen = ({ playerNames }) => {
       
       </div>
           <div className="flex justify-around  overflow-x-scroll pt-5 gap-5 px-2 ">
-          {players.map((_, index) => (
+          {players.map((player, index) => (
             <input
               key={index}
               type="number"
               className={` p-1 w-14  bg-gray-700 border  border-gray-300 rounded  text-center`}
-              placeholder={players[index].name]
+              placeholder={player.name}
               value={newPoints[index]}
               onChange={(e) => handlePointChange(index, e.target.value)}
             />
