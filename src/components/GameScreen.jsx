@@ -62,4 +62,3 @@ if (point>0) {setStat(s=>!s)}
     const highestScore = Math.max(...players.map(player => player.points[player.points.length - 1]));
     const lowestScore = Math.min(...players.map(player => player.points[player.points.length - 1]));
 
-    
