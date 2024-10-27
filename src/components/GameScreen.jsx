@@ -25,7 +25,7 @@ const GameScreen = ({ playerNames }) => {
       const pointsToAdd = validatePoints(newPoints[index]) ? Number(newPoints[index]) : 0;
       return { ...player, points: [...player.points, player.points[player.points.length - 1] + pointsToAdd] };
     });
-    setNewPoints(Array(playerNames.length).fill(0));
+    setNewPoints(Array(playerNames.length).fill(null));
     setPlayers(updatedPlayers);
 
     try {
