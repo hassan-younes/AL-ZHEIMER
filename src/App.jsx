@@ -49,7 +49,7 @@ const App = () => {
             <div className='flex w-full h-12 justify-center gap-5 '>
                   
                 <input
-                  type="text" // تغيير نوع الإدخال إلى نص
+                  type="number" // تغيير نوع الإدخال إلى نص
                   className="p-2 border border-gray-300 rounded mb-4 w-[55%] h-full bg-gray-800" // لون النص أسود
                   placeholder="Number of players"
                   value={numPlayers}
