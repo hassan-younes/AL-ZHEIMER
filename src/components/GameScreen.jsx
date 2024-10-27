@@ -11,7 +11,7 @@ const GameScreen = ({ playerNames }) => {
 
   const validatePoints = (value) => {
     const number = Number(value);
-    return !isNaN(number) && number >= 0; // تحقق من أن الرقم صالح
+    return !isNaN(number) ; // تحقق من أن الرقم صالح
   };
 
   const handleAddPoints = async () => {
