@@ -94,7 +94,7 @@ const GameScreen = ({ playerNames }) => {
               key={index}
               type="number"
               className={` p-1 w-14  bg-gray-700 border  border-gray-300 rounded  text-center`}
-              placeholder="points"
+              placeholder={players[index].name]
               value={newPoints[index]}
               onChange={(e) => handlePointChange(index, e.target.value)}
             />
