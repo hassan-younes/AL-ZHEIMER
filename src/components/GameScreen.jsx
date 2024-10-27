@@ -74,7 +74,7 @@ const GameScreen = ({ playerNames }) => {
       <div className="w-full max-h-[65vw]">
       <div className="flex  justify-between text-lg font-bold">
           {players.map((player, index) => (
-            <div key={index} className="flex-1 text-center ">{player.name}</div>
+            <div key={index} className="flex-1 text-sm text-center ">{player.name}</div>
           ))}
         </div>
       </div>
