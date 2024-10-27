@@ -19,8 +19,8 @@ const [stat,setStat]= useState(false);
       (accumulator, currentValue) => accumulator + currentValue,
       "",
     );
-    allPointsValue.map((point)=>{
-if (point>0) {setStat(s=>!s)}
+    allPointsValue.forEach((point)=>{
+if (point>=1) {setStat(true)}
 })
     if (allPointsValue===0 || stat === false) {return null};
     const updatedPlayers = players.map((player, index) => {
